@@ -1,16 +1,1 @@
-# Syntactic structure of a sentence: Basics
 
-install {svgling}
-
-!pip install svgling
-
-import svgling
-from svgling.figure import Caption, SideBySide, RowByRow
-
-#1. Sentence structure
-
-mystr0 = ("Sentence", ("S","The sun rises in the East."))
-out = svgling.draw_tree(mystr0)
-out.set_edge_style((0,0), svgling.core.TriangleEdge())
-print("Sentence: The sun rises in the East.")
-Caption(out, "Fig.1 Sentence structure")
